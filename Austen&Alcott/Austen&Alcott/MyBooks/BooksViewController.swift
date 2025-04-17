@@ -19,12 +19,21 @@ class BooksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         Book(title: "Libro 5", author: "Autor 5"),
     ]
     
+    @IBOutlet weak var didTapAvailable: UIButton!
+    @IBOutlet weak var didTapHolds: UIButton!
+    @IBOutlet weak var didTapLabels: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         booksTableView.delegate = self
         booksTableView.dataSource = self
+        
+        let buttons = [didTapAvailable, didTapHolds, didTapLabels]
+        buttons.forEach { button in
+            button?.layer.cornerRadius = 12
+            button?.clipsToBounds = true
+        }
     }
     
     override func viewDidLayoutSubviews() {
