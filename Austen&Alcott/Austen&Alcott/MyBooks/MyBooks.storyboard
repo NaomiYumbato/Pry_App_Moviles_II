@@ -23,6 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="609" id="z34-Ik-foB"/>
                                 </constraints>
+                                <color key="separatorColor" systemColor="secondaryLabelColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="BookCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="177" id="ssu-SD-9g1" customClass="BookTableViewCell" customModule="Austen_Alcott" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="177"/>
@@ -46,20 +47,37 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theFourthWing" translatesAutoresizingMaskIntoConstraints="NO" id="3Hz-mY-NRd">
                                                     <rect key="frame" x="20" y="-5" width="96" height="141"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I7-dV-iGS">
+                                                    <rect key="frame" x="136" y="85.666666666666671" width="32" height="14.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tn4-aV-cD0">
+                                                    <rect key="frame" x="136" y="108" width="237" height="4"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" name="BgPrimary"/>
+                                                </progressView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7I7-dV-iGS" secondAttribute="trailing" constant="205" id="0gL-sj-sSH"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="3Hz-mY-NRd" secondAttribute="bottom" constant="30" id="7IY-Vq-cDq"/>
                                                 <constraint firstItem="hny-fw-fwI" firstAttribute="leading" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="20" id="DWu-r1-UsY"/>
                                                 <constraint firstAttribute="trailing" secondItem="hny-fw-fwI" secondAttribute="trailing" constant="10" id="GUA-aQ-7Cw"/>
                                                 <constraint firstItem="D0H-Oz-qK9" firstAttribute="top" secondItem="hny-fw-fwI" secondAttribute="bottom" constant="10" id="KT2-tt-Sri"/>
                                                 <constraint firstItem="D0H-Oz-qK9" firstAttribute="top" secondItem="hny-fw-fwI" secondAttribute="bottom" constant="10" id="MMn-7Q-KJb"/>
+                                                <constraint firstItem="tn4-aV-cD0" firstAttribute="top" secondItem="D0H-Oz-qK9" secondAttribute="bottom" constant="56" id="MhQ-wV-0hs"/>
                                                 <constraint firstItem="D0H-Oz-qK9" firstAttribute="top" secondItem="hny-fw-fwI" secondAttribute="bottom" constant="10" id="PKo-Qg-xOx"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="D0H-Oz-qK9" secondAttribute="bottom" constant="114" id="Qpq-ge-DBT"/>
+                                                <constraint firstItem="tn4-aV-cD0" firstAttribute="trailing" secondItem="Bq7-sn-7iN" secondAttribute="trailingMargin" id="XIw-Ab-78K"/>
                                                 <constraint firstItem="hny-fw-fwI" firstAttribute="leading" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="20" id="aJ3-9f-ZbT"/>
+                                                <constraint firstItem="7I7-dV-iGS" firstAttribute="leading" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="20" id="d6w-nM-T4B"/>
+                                                <constraint firstItem="tn4-aV-cD0" firstAttribute="top" secondItem="7I7-dV-iGS" secondAttribute="bottom" constant="8" id="dAh-8A-BZC"/>
                                                 <constraint firstItem="D0H-Oz-qK9" firstAttribute="leading" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="20" id="dW2-hm-4NU"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="257" id="gdQ-ih-OgN"/>
                                                 <constraint firstItem="D0H-Oz-qK9" firstAttribute="top" secondItem="hny-fw-fwI" secondAttribute="bottom" constant="10" id="kNO-Cr-zCw"/>
                                                 <constraint firstAttribute="trailing" secondItem="hny-fw-fwI" secondAttribute="trailing" constant="10" id="mW3-zS-yXG"/>
+                                                <constraint firstItem="tn4-aV-cD0" firstAttribute="leading" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="20" id="n0V-jy-IkB"/>
                                                 <constraint firstItem="hny-fw-fwI" firstAttribute="top" secondItem="Bq7-sn-7iN" secondAttribute="top" constant="10" id="nHb-fu-OD5"/>
                                                 <constraint firstItem="hny-fw-fwI" firstAttribute="top" secondItem="Bq7-sn-7iN" secondAttribute="top" constant="10" id="p9K-kT-Plh"/>
                                                 <constraint firstItem="D0H-Oz-qK9" firstAttribute="leading" secondItem="3Hz-mY-NRd" secondAttribute="trailing" constant="20" id="uAn-Rh-or2"/>
@@ -67,6 +85,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="authorLabel" destination="D0H-Oz-qK9" id="vtg-Mh-mBE"/>
+                                            <outlet property="progressLabel" destination="7I7-dV-iGS" id="YgH-XK-nbF"/>
+                                            <outlet property="progressView" destination="tn4-aV-cD0" id="fW9-nF-nCM"/>
                                             <outlet property="titleLabel" destination="hny-fw-fwI" id="Img-Gf-tGh"/>
                                         </connections>
                                     </tableViewCell>
@@ -192,6 +212,9 @@
         </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

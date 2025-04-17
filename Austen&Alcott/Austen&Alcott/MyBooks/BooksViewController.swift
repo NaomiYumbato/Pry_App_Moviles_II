@@ -12,11 +12,11 @@ class BooksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var header: UIView!
     
     var booksMocked: [Book] = [
-        Book(title: "Libro 1", author: "Autor 1"),
-        Book(title: "Libro 2", author: "Autor 2"),
-        Book(title: "Libro 3", author: "Autor 3"),
-        Book(title: "Libro 4", author: "Autor 4"),
-        Book(title: "Libro 5", author: "Autor 5"),
+        Book(title: "Libro 1", author: "Autor 1", progress: 25),
+        Book(title: "Libro 2", author: "Autor 2", progress: 10),
+        Book(title: "Libro 3", author: "Autor 3", progress: 99),
+        Book(title: "Libro 4", author: "Autor 4", progress: 50),
+        Book(title: "Libro 5", author: "Autor 5", progress: 75),
     ]
     
     @IBOutlet weak var didTapAvailable: UIButton!
