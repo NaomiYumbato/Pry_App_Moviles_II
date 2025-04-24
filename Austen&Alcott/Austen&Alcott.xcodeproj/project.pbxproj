@@ -18,6 +18,8 @@
 		E1165ADE2DB0E9ED00D2B822 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165ADD2DB0E9ED00D2B822 /* Book.swift */; };
 		E1165AE02DB0EA4800D2B822 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165ADF2DB0EA4800D2B822 /* BookTableViewCell.swift */; };
 		E189C0C32DB0F946003A57B6 /* MyBooks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E189C0C22DB0F946003A57B6 /* MyBooks.storyboard */; };
+		E1E1DD212DB72B18005E8087 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1DD202DB72B18005E8087 /* UserViewController.swift */; };
+		E1E1DD232DB72F1B005E8087 /* UserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1DD222DB72F1B005E8087 /* UserEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E1165ADD2DB0E9ED00D2B822 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E1165ADF2DB0EA4800D2B822 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		E189C0C22DB0F946003A57B6 /* MyBooks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBooks.storyboard; sourceTree = "<group>"; };
+		E1E1DD202DB72B18005E8087 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		E1E1DD222DB72F1B005E8087 /* UserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		E14F80A52DB0C097006B34FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E1E1DD1F2DB72AEF005E8087 /* User */,
 				E14F80A62DB0C09D006B34FE /* MyBooks */,
 			);
 			name = Modules;
@@ -104,6 +109,15 @@
 				E189C0C22DB0F946003A57B6 /* MyBooks.storyboard */,
 			);
 			path = MyBooks;
+			sourceTree = "<group>";
+		};
+		E1E1DD1F2DB72AEF005E8087 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E1E1DD202DB72B18005E8087 /* UserViewController.swift */,
+				E1E1DD222DB72F1B005E8087 /* UserEditViewController.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E1DD232DB72F1B005E8087 /* UserEditViewController.swift in Sources */,
 				B7D5E41C2DAF2473007F4E6F /* Austen_Alcott.xcdatamodeld in Sources */,
+				E1E1DD212DB72B18005E8087 /* UserViewController.swift in Sources */,
 				B7D5E4162DAF2473007F4E6F /* ViewController.swift in Sources */,
 				E1165ADE2DB0E9ED00D2B822 /* Book.swift in Sources */,
 				E1165AE02DB0EA4800D2B822 /* BookTableViewCell.swift in Sources */,
