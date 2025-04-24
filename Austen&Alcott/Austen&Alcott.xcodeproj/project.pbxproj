@@ -17,6 +17,7 @@
 		E1165AD52DB0D1EF00D2B822 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165AD42DB0D1EF00D2B822 /* BooksViewController.swift */; };
 		E1165ADE2DB0E9ED00D2B822 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165ADD2DB0E9ED00D2B822 /* Book.swift */; };
 		E1165AE02DB0EA4800D2B822 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165ADF2DB0EA4800D2B822 /* BookTableViewCell.swift */; };
+		E1373C3F2DB9EEDC0030FF45 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1373C3E2DB9EEDC0030FF45 /* Dashboard.storyboard */; };
 		E189C0C32DB0F946003A57B6 /* MyBooks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E189C0C22DB0F946003A57B6 /* MyBooks.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		E1165AD42DB0D1EF00D2B822 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		E1165ADD2DB0E9ED00D2B822 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E1165ADF2DB0EA4800D2B822 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		E1373C3E2DB9EEDC0030FF45 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		E189C0C22DB0F946003A57B6 /* MyBooks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBooks.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,9 +90,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E1373C3D2DB9EECD0030FF45 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E1373C3E2DB9EEDC0030FF45 /* Dashboard.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		E14F80A52DB0C097006B34FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E1373C3D2DB9EECD0030FF45 /* Dashboard */,
 				E14F80A62DB0C09D006B34FE /* MyBooks */,
 			);
 			name = Modules;
@@ -165,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D5E4212DAF2473007F4E6F /* LaunchScreen.storyboard in Resources */,
+				E1373C3F2DB9EEDC0030FF45 /* Dashboard.storyboard in Resources */,
 				E189C0C32DB0F946003A57B6 /* MyBooks.storyboard in Resources */,
 				B7D5E41E2DAF2473007F4E6F /* Assets.xcassets in Resources */,
 				B7D5E4192DAF2473007F4E6F /* Main.storyboard in Resources */,
