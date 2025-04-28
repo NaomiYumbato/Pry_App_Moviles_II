@@ -21,6 +21,12 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerTapped(_ sender: UIButton) {
+        let ViewController = storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                self.present(ViewController, animated: true, completion: nil)
+        // 🚧 Nota: Por ahora no ejecutamos el flujo de validación de register
+        // para simplificar las pruebas y navegación inicial de la app.
+        // retirar return cuando dejemos todo funcional
+        return
             let username = usernameField.text ?? ""
             let password = passwordField.text ?? ""
             let firstName = firstNameField.text ?? ""

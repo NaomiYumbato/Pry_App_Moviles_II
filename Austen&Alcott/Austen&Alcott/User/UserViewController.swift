@@ -25,6 +25,11 @@ class UserViewController: UIViewController {
         
     }
     
+    @IBAction func didTapgoEditProfile(_ sender: UIButton) {
+        let editProfileVC = storyboard?.instantiateViewController(withIdentifier: "UserEditViewController") as! UserEditViewController
+                self.present(editProfileVC, animated: true, completion: nil)
+    }
+    
 
 
 }
