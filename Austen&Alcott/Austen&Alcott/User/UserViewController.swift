@@ -24,12 +24,5 @@ class UserViewController: UIViewController {
         borderView.layer.mask = mask
         
     }
-    
-    @IBAction func didTapgoEditProfile(_ sender: UIButton) {
-        let editProfileVC = storyboard?.instantiateViewController(withIdentifier: "UserEditViewController") as! UserEditViewController
-                self.present(editProfileVC, animated: true, completion: nil)
-    }
-    
-
 
 }
