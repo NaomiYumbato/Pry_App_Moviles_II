@@ -45,6 +45,8 @@
 		E1165AD52DB0D1EF00D2B822 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165AD42DB0D1EF00D2B822 /* BooksViewController.swift */; };
 		E1165ADE2DB0E9ED00D2B822 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165ADD2DB0E9ED00D2B822 /* Book.swift */; };
 		E1165AE02DB0EA4800D2B822 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1165ADF2DB0EA4800D2B822 /* BookTableViewCell.swift */; };
+		E174CE812DC06B0A005FC5A8 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174CE802DC06B0A005FC5A8 /* TabViewController.swift */; };
+		E174CE832DC08418005FC5A8 /* NavigationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174CE822DC08418005FC5A8 /* NavigationTab.swift */; };
 		E1E1DD212DB72B18005E8087 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1DD202DB72B18005E8087 /* UserViewController.swift */; };
 		E1E1DD232DB72F1B005E8087 /* UserEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E1DD222DB72F1B005E8087 /* UserEditViewController.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		E1165AD42DB0D1EF00D2B822 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		E1165ADD2DB0E9ED00D2B822 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		E1165ADF2DB0EA4800D2B822 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		E174CE802DC06B0A005FC5A8 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		E174CE822DC08418005FC5A8 /* NavigationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTab.swift; sourceTree = "<group>"; };
 		E1E1DD202DB72B18005E8087 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E1E1DD222DB72F1B005E8087 /* UserEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,8 @@
 				B770BB542DBEA1CC0001F565 /* HomeViewController.swift */,
 				B770BB562DBEA1E90001F565 /* LoginViewController.swift */,
 				B770BB582DBEA22F0001F565 /* RegisterViewController.swift */,
+				E174CE802DC06B0A005FC5A8 /* TabViewController.swift */,
+				E174CE822DC08418005FC5A8 /* NavigationTab.swift */,
 			);
 			path = "Austen&Alcott";
 			sourceTree = "<group>";
@@ -282,12 +288,14 @@
 				B7D5E41C2DAF2473007F4E6F /* Austen_Alcott.xcdatamodeld in Sources */,
 				E1E1DD212DB72B18005E8087 /* UserViewController.swift in Sources */,
 				B770BB592DBEA22F0001F565 /* RegisterViewController.swift in Sources */,
+				E174CE812DC06B0A005FC5A8 /* TabViewController.swift in Sources */,
 				B7D5E4162DAF2473007F4E6F /* ViewController.swift in Sources */,
 				E1165ADE2DB0E9ED00D2B822 /* Book.swift in Sources */,
 				B770BB552DBEA1CC0001F565 /* HomeViewController.swift in Sources */,
 				E1165AE02DB0EA4800D2B822 /* BookTableViewCell.swift in Sources */,
 				B7D5E4122DAF2473007F4E6F /* AppDelegate.swift in Sources */,
 				B7D5E4142DAF2473007F4E6F /* SceneDelegate.swift in Sources */,
+				E174CE832DC08418005FC5A8 /* NavigationTab.swift in Sources */,
 				E1165AD52DB0D1EF00D2B822 /* BooksViewController.swift in Sources */,
 				B770BB572DBEA1E90001F565 /* LoginViewController.swift in Sources */,
 			);

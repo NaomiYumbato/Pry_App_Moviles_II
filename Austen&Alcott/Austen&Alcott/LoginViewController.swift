@@ -19,6 +19,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
+        // 🚧 Nota: Por ahora no ejecutamos el flujo de validación de login
+        // para simplificar las pruebas y navegación inicial de la app.
+        // Borrar el return cuando dejemos toda la app funcional
+        return
         let username = usernameField.text ?? ""
         let password = passwordField.text ?? ""
         
